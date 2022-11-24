@@ -1,0 +1,525 @@
+
+<head>
+    <title>CV de Jérémy Huguet</title>
+    <meta charset="utf-8">
+    <meta name="viewport"content="width=device-width, initial-scale=1, user-scalable=no">
+
+<!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  </head>
+<body>
+<Style>
+  /*STYLES GENERAUX*/
+  *{
+      font-family: Avenir, sans-serif;
+      padding: 0px;
+      margin: 0px;
+      text-align: justify;
+      box-sizing: border-box;
+  }
+  body{
+      background: #ededed;
+  }
+  p{
+      font-size: 1em;
+      line-height: 1.5em;
+  }
+  a{
+      text-decoration: none;
+      color: #000;
+  }
+  
+  /*HEADER & FOOTER*/
+  header, footer{
+      width: 100%;
+      padding: 20px 0px;
+      background: url("https://www.pierre-giraud.com/wp-content/uploads/2019/07/cv-cover.jpg") #4f4f4f;
+      box-shadow: 0px 0px 15px #333;
+  }
+  header{
+      border-bottom: 2px solid #fff;
+      height: 120px;
+  }
+  header h1{
+      color: white;
+      font-size: 1.5em;
+      width: 90%;
+      margin: 0 auto;
+  }
+  
+  footer{
+      border-top: 2px solid #fff;
+  }
+  footer p{
+      width: 90%;
+      margin: 0 auto;
+      color: #fff;
+      text-align: center;
+  }
+  footer a{
+      color: #fff;
+  }
+  
+  /*SECTIONS*/
+  section{
+      display: flex; 
+      flex-flow: row wrap;
+      justify-content: center;
+      width: 100%;
+      padding-bottom: 20px;
+      margin: 20px auto;
+      box-shadow: 0px 0px 10px #bbb;
+      background-color: #fff;
+  }
+  
+  section h2{
+      margin: 20px 0;
+      width: 90%;
+  }
+  section > div{
+      width: 90%;
+  }
+  
+  /*SECTION INFOS*/
+  .photo{
+      text-align: center;
+  }
+  .photo img{
+      width: 150px;
+      height: 150px;
+      border: 3px solid #fff;
+      box-shadow: 0px 0px 10px #777;
+      border-radius: 50%;
+      margin-top: -80px;
+  }
+  .prez{
+      border-bottom: 2px dashed #ccc;
+  }
+  .prez a{
+      display: block;
+      text-align: center;
+      padding: 10px;
+      margin: 10px auto 30px auto;
+      color: #fff;
+      background-color: #EA0;
+      box-shadow: 0px 0px 10px #ccc;
+      border-radius: 5px;
+  }
+  .contact-flex{
+      display: flex;
+      flex-flow: row wrap;
+      align-items: center;
+  }
+  .contact-flex p:first-child{
+      flex: 0 0 40%;
+  }
+  .contact-flex p:last-child{
+      flex: 0 0 60%;
+  }
+  .social{
+      display: flex;
+      justify-content: space-around;
+      margin: 10px auto 0px auto;
+  }
+  .social img{
+      width: 40px;
+      height: 40px;
+  }
+  
+  /*SECTION EXP ET FORMATION*/
+  .exp{
+      display: flex;
+      flex-flow: row wrap;
+      border-bottom: 1px solid #bbb;
+      padding-bottom: 10px;
+      margin-bottom: 10px;
+  }
+  .exp-info{
+      display: flex;
+      flex-flow: column wrap;
+  }
+  .exp-logo{
+      flex: 0 0 25%;
+      max-width: 100px;
+  }
+  .exp-info{
+      flex: 0 0 70%;
+      margin-left: auto;
+  }
+  .exp img{
+      width: 100%;
+  }
+  .exp h3{
+      font-size:  1.2em;
+  }
+  .exp h4{
+      font-size:  1em;
+      font-weight: normal;
+  }
+  
+  /*SECTION COMPETENCES*/
+  .h3gauche{
+      width: 90%;
+  }
+  .comp{
+      display:flex;
+      flex-flow: row wrap;
+      margin-bottom: 10px;
+  }
+  .comp p{
+      flex: 0 0 40%;
+  }
+  .conteneur-barre{
+      flex: 0 0 60%;
+      border-radius: 5px;
+      background-color: grey;
+      border-bottom: 1px ridge grey;
+  }
+  .barre{
+      display: block;
+      height: 100%;
+      border-top-left-radius: 5px;
+      border-bottom-left-radius: 5px;
+  }
+  .c85{
+      width: 85%;
+      background-color: #8B8;
+  }
+  .c90{
+      width: 90%;
+      background-color: #4B8;
+  }
+  .c95{
+      width: 95%;
+      background-color: #4B8;
+  }
+  .c100{
+      width: 100%;
+      background-color: #4B8;
+      border-radius: 5px;
+  }
+  .comp2{
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-between;
+  }
+  .conteneur-barre2{
+      flex: 0 0 100%;
+      height: 0.5em;
+      margin-bottom: 0.25em;
+      border-radius: 5px;
+      background-color: grey;
+  }
+  
+  /*SECTION INTERETS*/
+  .interet{
+      flex: 0 1 50%;
+      display: flex;
+      flex-flow: column wrap;
+      align-items: center;
+      margin-bottom: 20px;
+  }
+  .interet img{
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      box-shadow: 0px 0px 15px #555;
+  }
+  
+  /*VERSION BUREAU DU CV*/
+  @media screen and (min-width: 980px){
+      section{
+          width: 80%;
+          box-shadow: 0px 0px 10px #bbb;
+      }
+      a:hover{
+          color: #EA0;
+      }
+      header h1{
+          width: 80%;
+      }
+      .prez, .contact{
+          flex: 0 0 45%;
+      }
+      .prez{
+          border-bottom: none;
+          border-right: 2px solid #ccc;
+          padding-right: 20px;
+          margin-left: auto;
+      }
+      .contact{
+          padding-left: 20px;
+          margin-right: auto;
+      }
+      .prez a{
+          border: 2px solid transparent;
+      }
+      .prez a:hover{
+          color: #f28835;
+          background-color: #fff;
+          border: 2px solid #f28835;
+          box-shadow: 0px 0px 20px #666;
+      }
+      .exp-logo{
+          flex: 0 0 10%;
+      }
+      .exp-info, .exp-desc{
+          flex: 0 0 85%;
+          margin-left: auto;
+      }
+      .interet{
+          flex: 0 1 25%;
+      }
+  }
+</Style>
+    
+    <section>
+        <h2>Expériences professionnelles</h2>
+        <div class="accordion" id="accordionExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingZero">
+              <button class="accordion-button text-dark bg-dark text-danger" type="button" data-bs-toggle="collapse" data-bs-target="#collapseZero" aria-expanded="true" aria-controls="collapseZero">
+                <div class="card bg-dark text-danger" >
+                  <div class="card-body">
+                    <h5 class="card-title">Altérnance chez XPO Logistics</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">A Lyon</h6>
+                    <p class="card-text">Septembre 2022 (2 ans)</p>
+                  </div>
+                </div>
+              </button>
+            </h2>
+            <div id="collapseZero" class="accordion-collapse collapse show" aria-labelledby="headingZero" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <strong>Altérnance de BTS SIO options SISR</strong> Chez XPO, je fais de la résolution de ticket, de la gestion d'équipements sur un logiciel de monitoing, de la configuration de poste téléphonique et de la configuration d'onduleur.
+              </div>
+            </div>
+          </div>
+            <h2 class="accordion-header" id="headingOne">
+              <button class="accordion-button text-dark bg-dark text-danger" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                <div class="card bg-dark text-danger" >
+                  <div class="card-body">
+                    <h5 class="card-title">Stage Chez Groupama Rhône Alpes-Auvergne</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">A Lyon</h6>
+                    <p class="card-text">Mars 2022 (1 Mois)</p>
+                  </div>
+                </div>
+              </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <strong>Stage de Términale Bac PRO</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingTwo">
+              <button class="accordion-button text-dark bg-dark text-danger" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                <div class="card bg-dark text-danger" >
+                  <div class="card-body">
+                    <h5 class="card-title">Stage Chez Groupama Rhône Alpes-Auvergne</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">A Lyon</h6>
+                    <p class="card-text">Octobre 2022 (1 Mois)</p>
+                  </div>
+                </div>
+              </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingThree">
+              <button class="accordion-button text-dark bg-dark text-danger" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+                <div class="card bg-dark text-danger" >
+                  <div class="card-body">
+                    <h5 class="card-title">Stage Chez Trigano VDL</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">A Tournon Sur Rhône</h6>
+                    <p class="card-text">Juin-Juillet 2021 (1 Mois et 3 Semaines)</p>
+                  </div>
+                </div>
+              </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <strong>Stage de Première Bac PRO</strong>  It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingFour">
+              <button class="accordion-button text-dark bg-dark text-danger" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+                <div class="card bg-dark text-danger" >
+                  <div class="card-body">
+                    <h5 class="card-title">Stage Chez ISDP Informatique</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">A Arlebosc</h6>
+                    <p class="card-text">Octobre 2019 (1 Mois)</p>
+                  </div>
+                </div>
+              </button>
+            </h2>
+            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <strong>Stage de Seconde Bac PRO</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+              </div>
+            </div>
+          </div>
+
+    </section>
+    
+    <section>
+
+        <h2>Formation</h2>
+          <div class="accordion accordion-flush" id="accordionFlushExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingOne">
+                <button class="accordion-button collapsed bg-dark text-danger" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                  Institut Supérieur Saint Denis
+                </button>
+              </h2>
+              <div id="flush-collapseOne" class="accordion-collapse collapse bg-secondary text-warning" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the .accordion-flush class. This is the first item's accordion body.</div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingTwo">
+                <button class="accordion-button collapsed bg-dark text-danger" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                  Lycée Marc Seguin
+                </button>
+              </h2>
+              <div id="flush-collapseTwo" class="accordion-collapse collapse bg-secondary text-warning" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the .accordion-flush class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingThree">
+                <button class="accordion-button collapsed bg-dark text-danger" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                  Collége Saint Louis
+                </button>
+              </h2>
+              <div id="flush-collapseThree" class="accordion-collapse collapse bg-secondary text-warning" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the .accordion-flush class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+              </div>
+            </div>
+          </div>
+        
+
+    </section>
+    
+    <section>
+        <h2>Compétences Professionnelles </h2>
+        <div class="card-group">
+            <div class="exp">
+            <div class="card-group">
+                <div class="card m-2 bg-light ">
+                <img class="card-img-top" src="http://emafructidor.com/ema/wp-content/uploads/2019/05/formation.png" alt="Card image cap">
+                    <div class="card-body">
+                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+    
+                            <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModa4">
+                            Code
+                        </button>
+    
+</div>
+    </section>
+  
+</body>
+
+
+
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>  <body>
+    <div class="container">
+    <main>
+      <article>
+
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModa3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Formation</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <div style=""><span style="font-style:normal;font-weight:bold;font-size:11pt;font-family:Constantia;color:#000000">Baccalauréat Professionnel Systèmes Numériques option RISC (réseaux informatiques et systèmes communicants)</span></SPAN><br/></div>
+              </div>
+            <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+    </div>
+    </div>
+</div>
+
+
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModa2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+    <div class="modal-content">
+        <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Expériences</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal1" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+
+                <div style=""><DIV style="position:relative; left:0.16in;"><span style="font-style:normal;font-weight:bold;font-size:11pt;font-family:Constantia;color:#000000">• Mars 2022</span><span style="font-style:normal;font-weight:normal;font-size:11pt;font-family:Constantia;color:#000000"> </span><br/></SPAN></DIV></div>
+                <div style=""><span style="font-style:normal;font-weight:normal;font-size:11pt;font-family:Constantia;color:#000000">Stage de Tale Bac Pro Systèmes Numériques dans l’entreprise </span><span style="font-style:normal;font-weight:normal;font-size:11pt;font-family:Constantia;color:#000000"><span style="font-style:normal;font-weight:bold;font-size:11pt;font-family:Constantia;color:#000000">Groupama à Vaise (4 semaines) </span> </span><br/></SPAN></div>
+
+                <div style=""><DIV style="position:relative; left:0.16in;"><span style="font-style:normal;font-weight:bold;font-size:11pt;font-family:Constantia;color:#000000">• Octobre 2021</span><span style="font-style:normal;font-weight:normal;font-size:11pt;font-family:Constantia;color:#000000"> </span><br/></SPAN></DIV></div>
+                <div style=""><span style="font-style:normal;font-weight:normal;font-size:11pt;font-family:Constantia;color:#000000">Stage de Tale Bac Pro Systèmes Numériques dans l’entreprise</span><span style="font-style:normal;font-weight:normal;font-size:11pt;font-family:Constantia;color:#000000"> <span style="font-style:normal;font-weight:bold;font-size:11pt;font-family:Constantia;color:#000000">Groupama à Vaise (4 semaines) </span></span><br/></SPAN></div>
+
+                <div style=""><DIV style="position:relative; left:0.16in;"><span style="font-style:normal;font-weight:bold;font-size:11pt;font-family:Constantia;color:#000000">• Juin 2021</span><span style="font-style:normal;font-weight:normal;font-size:11pt;font-family:Constantia;color:#000000"> </span><br/></SPAN></DIV></div>
+                <div style=""><span style="font-style:normal;font-weight:normal;font-size:11pt;font-family:Constantia;color:#000000">Stage de 1 ere Bac Pro Systèmes Numérique dans l’entreprise </span><span style="font-style:normal;font-weight:normal;font-size:11pt;font-family:Constantia;color:#000000"><span style="font-style:normal;font-weight:bold;font-size:11pt;font-family:Constantia;color:#000000">Trigano VDL à Tournon sur Rhône (7 semaines)</span> </span><br/></SPAN></div>
+
+                <div style=""><DIV style="position:relative; left:0.16in;"><span style="font-style:normal;font-weight:bold;font-size:11pt;font-family:Constantia;color:#000000">• Janvier 2020</span><span style="font-style:normal;font-weight:normal;font-size:11pt;font-family:Constantia;color:#000000"> </span><span style="font-style:normal;font-weight:normal;font-size:11pt;font-family:Constantia;color:#000000"> </span><br/></SPAN></DIV></div>
+                <div style=""><span style="font-style:normal;font-weight:normal;font-size:11pt;font-family:Constantia;color:#000000">Stage de 2de Bac Pro Systèmes Numériques dans l’entreprise </span><span style="font-style:normal;font-weight:normal;font-size:11pt;font-family:Constantia;color:#000000"><span style="font-style:normal;font-weight:bold;font-size:11pt;font-family:Constantia;color:#000000">ISDP Informatique à Arlebosc (3 semaines)</span> </span><br/></SPAN></div>
+       
+        </div>
+        <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+    </div>
+    </div>
+</div>
+
+ <!-- Modal -->
+ <div class="modal fade" id="exampleModa4" tabindex="-1" aria-labelledby="exampleModalLabel4" aria-hidden="true">
+    <div class="modal-dialog">
+    <div class="modal-content">
+        <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel4">Expériences</h5>
+        </div>
+        <div class="modal-body">
+            <div style=""><span style="font-style:normal;font-weight:normal;font-size:11pt;font-family:Constantia;color:#000000">- Mise en place de nouveaux postes</span><span style="font-style:normal;font-weight:normal;font-size:11pt;font-family:Constantia;color:#000000"> </span><br/></SPAN></div>
+            <div style=""><span style="font-style:normal;font-weight:normal;font-size:11pt;font-family:Constantia;color:#000000">- Montage de composants dans un </span><span style="font-style:normal;font-weight:normal;font-size:11pt;font-family:Constantia;color:#000000">PC</span><span style="font-style:normal;font-weight:normal;font-size:11pt;font-family:Constantia;color:#000000"> </span><br/></SPAN></div>
+            <div style=""><span style="font-style:normal;font-weight:normal;font-size:11pt;font-family:Constantia;color:#000000">- Changement de matériels </span><span style="font-style:normal;font-weight:normal;font-size:11pt;font-family:Constantia;color:#000000"> </span><br/></SPAN></div>
+            <div style=""><span style="font-style:normal;font-weight:normal;font-size:11pt;font-family:Constantia;color:#000000">- Amélioration d’un pc par rajout de composants</span><span style="font-style:normal;font-weight:normal;font-size:11pt;font-family:Constantia;color:#000000"> </span><br/></SPAN></div>
+            <div style=""><span style="font-style:normal;font-weight:normal;font-size:11pt;font-family:Constantia;color:#000000">- Changement de Disques durs</span><span style="font-style:normal;font-weight:normal;font-size:12pt;font-family:Constantia;color:#000000"> </span><br/></SPAN></div>
+            <div style=""><span style="font-style:normal;font-weight:normal;font-size:11pt;font-family:Constantia;color:#000000">- Nettoyage de </span><span style="font-style:normal;font-weight:normal;font-size:11pt;font-family:Constantia;color:#000000">PC</span><span style="font-style:normal;font-weight:normal;font-size:11pt;font-family:Constantia;color:#000000"> </span><br/></SPAN></div>
+            <div style=""><span style="font-style:normal;font-weight:normal;font-size:11pt;font-family:Constantia;color:#000000">- Installation d’un système d’exploitation</span><span style="font-style:normal;font-weight:normal;font-size:11pt;font-family:Constantia;color:#000000"> </span><br/></SPAN></div>
+            <div style=""><span style="font-style:normal;font-weight:normal;font-size:11pt;font-family:Constantia;color:#000000">- Mise à jour de </span><span style="font-style:normal;font-weight:normal;font-size:11pt;font-family:Constantia;color:#000000">PC</span><span style="font-style:normal;font-weight:normal;font-size:11pt;font-family:Constantia;color:#000000"> </span><br/></SPAN></div>
+            <div style=""><span style="font-style:normal;font-weight:normal;font-size:11pt;font-family:Constantia;color:#000000">- Installation de programmes</span><span style="font-style:normal;font-weight:normal;font-size:11pt;font-family:Constantia;color:#000000"> </span><br/></SPAN></div>
+            <div style=""><span style="font-style:normal;font-weight:normal;font-size:11pt;font-family:Constantia;color:#000000">- Configuration de Téléviseur </span></SPAN><br/></div>
+            <div style=""><span style="font-style:normal;font-weight:normal;font-size:11pt;font-family:Constantia;color:#000000"> </span><br/></SPAN></div>
+            <div style=""><span style="font-style:normal;font-weight:normal;font-size:11pt;font-family:Constantia;color:#000000">- Installation de Téléviseur </span><span style="font-style:normal;font-weight:normal;font-size:11pt;font-family:Constantia;color:#000000"> </span><br/></SPAN></div>
+            <div style=""><span style="font-style:normal;font-weight:normal;font-size:11pt;font-family:Constantia;color:#000000">- Changement de prises réseau sur une baie de brassage</span><span style="font-style:normal;font-weight:normal;font-size:11pt;font-family:Constantia;color:#000000"> </span><br/></SPAN></div>
+            <div style=""><span style="font-style:normal;font-weight:normal;font-size:11pt;font-family:Constantia;color:#000000">- Aide à la construction d’un réseau</span><span style="font-style:normal;font-weight:normal;font-size:11pt;font-family:Constantia;color:#000000"> </span><br/></SPAN></div>
+            <div style=""><span style="font-style:normal;font-weight:normal;font-size:11pt;font-family:Constantia;color:#000000">- Installation de prises réseau sur une baie de brassage</span><span style="font-style:normal;font-weight:normal;font-size:11pt;font-family:Constantia;color:#000000"> </span><br/></SPAN></div>
+            <div style=""><span style="font-style:normal;font-weight:normal;font-size:11pt;font-family:Constantia;color:#000000">- Codage en Visual Basic (VBA)</span><span style="font-style:normal;font-weight:normal;font-size:11pt;font-family:Constantia;color:#000000"> </span><br/></SPAN></div>
+            <div style=""><span style="font-style:normal;font-weight:normal;font-size:11pt;font-family:Constantia;color:#000000">- Mise à jour du site internet</span><span style="font-style:normal;font-weight:normal;font-size:11pt;font-family:Constantia;color:#000000"> </span><br/></SPAN></div>
+            <div style =""><span style="font-style:normal;font-weight:normal;font-size:11pt;font-family:Constantia;color:#000000">- Création de procédures d’utilisation </span><span style="font-style:normal;font-weight:normal;font-size:11pt;font-family:Constantia;color:#000000"> </span><br/></SPAN></div>
+            <div style=""><span style="font-style:normal;font-weight:normal;font-size:11pt;font-family:Constantia;color:#000000">- Windows Server 2019 et windows server 20</span><span style="font-style:normal;font-weight:normal;font-size:11pt;font-family:Constantia;color:#000000">12</span><span style="font-style:normal;font-weight:normal;font-size:11pt;font-family:Constantia;color:#000000"> </span><br/></SPAN></div>
+        </div>
+        <div class="modal-footer">
+        </div>
+    </div>
+</div>
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+
+
+
